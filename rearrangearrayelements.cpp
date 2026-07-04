@@ -44,51 +44,51 @@
 
 //************OPTIMAL*****************//
 
-// #include <bits/stdc++.h>
-// using namespace std;
+#include <bits/stdc++.h>
+using namespace std;
 
-// int main()
-// {
-//     int i, n;
-//     cout << "Enter the size of the array: ";
-//     cin >> n;
-//     int arr[n];
-//     cout << "Enter the array elements: ";
+int main()
+{
+    int i, n;
+    cout << "Enter the size of the array: ";
+    cin >> n;
+    int arr[n];
+    cout << "Enter the array elements: ";
 
-//     for (i = 0; i < n; i++)
-//     {
-//         cin >> arr[i];
-//     }
+    for (i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
 
-//     int ansarr[n];
-//   int pos = 0;
-//         int neg = 1;
-//     for (i = 0; i < n; i++)
-//     {
-        
-//         if (arr[i] < 0)
-//         {
-//             if (neg < n){
-//                 ansarr[neg] = arr[i];
-//             neg = neg + 2;
-//         }
-//     }
-//     else
-//     {
-//         if (pos < n)
-//         {
-//             ansarr[pos] = arr[i];
-//             pos = pos + 2;
-//         }
-//     }
+    int ansarr[n];
+    int pos = 0;
+    int neg = 1;
+    for (i = 0; i < n; i++)
+    {
 
-// }
-// cout << "printing the array elements: ";
+        if (arr[i] < 0)
+        {
+            if (neg < n)
+            {
+                ansarr[neg] = arr[i];
+                neg = neg + 2;
+            }
+        }
+        else
+        {
+            if (pos < n)
+            {
+                ansarr[pos] = arr[i];
+                pos = pos + 2;
+            }
+        }
+    }
+    cout << "printing the array elements: ";
 
-// for (i = 0; i < n; i++)
-// {
-//     cout << ansarr[i];
-// }
+    for (i = 0; i < n; i++)
+    {
+        cout << ansarr[i];
+    }
 
-// return 0;
-// }
+    return 0;
+}
