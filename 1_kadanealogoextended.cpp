@@ -38,10 +38,6 @@ int main()
         {
             sum = 0;
         }
-        if(maxsum<0){
-            maxsum=0;
-
-        }
     }
     for(int i=anstart;i<=ansend;i++){
         cout<<arr[i]<<" ";
